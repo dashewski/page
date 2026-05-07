@@ -16,17 +16,24 @@ export default function AboutInfo({ t }: AboutInfoProps) {
       >
         {t.about.title}
       </p>
-      <div
-        className="text-[40px] w-[730px] leading-normal"
-        style={{ fontFamily: CONSOLE }}
-      >
-        {t.about.text.map((line, i) =>
-          line === '' ? (
-            <p key={i} className="h-[40px]" />
-          ) : (
-            <p key={i} className="whitespace-pre-wrap">{line}</p>
-          )
-        )}
+      <div className="flex items-start justify-between w-full">
+        <div
+          className="text-[40px] w-[730px] leading-normal"
+          style={{ fontFamily: CONSOLE }}
+        >
+          {t.about.text.map((line, i) =>
+            line === '' ? (
+              <p key={i} className="h-[40px]" />
+            ) : (
+              <p key={i} className="whitespace-pre-wrap">{line}</p>
+            )
+          )}
+        </div>
+        <img
+          src="/images/comp.svg"
+          alt=""
+          className="w-[430px] h-auto shrink-0"
+        />
       </div>
     </section>
   )

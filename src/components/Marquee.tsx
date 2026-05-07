@@ -12,7 +12,6 @@ export default function MarqueeSection({ t }: MarqueeSectionProps) {
     <section className="flex items-stretch gap-[28px] w-full overflow-hidden">
       <ContactBlock t={t} variant="stacked" />
 
-      {/* Marquee */}
       <div className="bg-[#9a38af] flex-1 overflow-hidden flex items-center">
         <div className="flex animate-marquee whitespace-nowrap">
           {[0, 1].map((i) => (
