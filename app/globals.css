@@ -7,26 +7,17 @@
 
 @font-face {
   font-family: 'Visitor TT2 Pro';
-  src: url('/fonts/Visitor2.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/visitor2.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Classic Console Neue';
-  src: url('/fonts/clacon2.woff2') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/clacon2.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Chakra Petch';
-  src: url('/fonts/ChakraPetch-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/Chakra.otf') format('opentype');
 }
 
 * {
