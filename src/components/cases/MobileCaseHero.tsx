@@ -95,7 +95,7 @@ export default function MobileCaseHero({
       {/* Subtitle */}
       <div className="bg-[#9a38af] inline-block w-fit overflow-hidden">
         <p
-          className="text-[#aeaeae] text-[30px] leading-none whitespace-pre-wrap -mt-[0.4em] -mb-[0.15em]"
+          className="text-[#aeaeae] text-[40px] leading-none whitespace-pre-wrap -mt-[0.4em] -mb-[0.15em]"
           style={{ fontFamily: VISITOR }}
         >
           {t.hero.subtitle}

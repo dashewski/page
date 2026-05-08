@@ -7,7 +7,7 @@ export const rwaRu: CaseContent = {
     here: '← ВЫ ЗДЕСЬ',
     tag: '|-rwa',
     name: 'rwa platform',
-    subtitle: 'Платформа токенизации бизнеса\nи торговли rwa-активами',
+    subtitle: '/ Платформа токенизации бизнеса\nи торговли rwa-активами',
   },
  description: `Представь: у тебя есть бизнес, но нет выхода на глобальный капитал. Или ты инвестор, которому надоело работать через посредников. Мы сделали RWA-платформу, которая решает оба эти вопроса - Web3-экосистема, где реальные активы токенизируются, а бизнес и деньги находят друг друга напрямую, без лишних прокладок, через крипту`,
 sections: [
@@ -32,5 +32,7 @@ sections: [
     { label: '{гитхаб бекенд линк}', url: 'https://github.com/digitalsoupteam/rwa-platform-backend' },
     { label: '{гитхаб фронтенд линк}', url: 'https://github.com/digitalsoupteam/rwa-platform-frontend' },
     { label: '{гитхаб смарт-контракты линк}', url: 'https://github.com/digitalsoupteam/rwa-platform' },
+    { label: '{фигма дизайн линк}', url: 'https://www.figma.com/design/lNA8AJaw8yeKWM69RuMDKu/Slices---Public-share?node-id=2305-6&t=3ekxpMRQxItaIXBE-1'},
+
   ],
 }

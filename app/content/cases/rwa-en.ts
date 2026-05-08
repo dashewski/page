@@ -7,7 +7,7 @@ export const rwaEn: CaseContent = {
     tag: '|-rwa',
     here: '← YOU HERE',
     name: 'rwa platform',
-    subtitle: 'Business tokenization platform\nand RWA-assets trading',
+    subtitle: '/ Business tokenization platform\nand RWA-assets trading',
   },
   description: `Picture this: you've got a real business but no access to global capital. Or you're an investor tired of paying middlemen just to exist. We built an RWA platform that fixes both - a Web3 ecosystem where real-world assets get tokenized and businesses connect with investors directly, no banks, no brokers, just crypto.`,
 sections: [
@@ -32,5 +32,6 @@ sections: [
     { label: '{github backend link}', url: 'https://github.com/digitalsoupteam/rwa-platform-backend' },
     { label: '{github frontend link}', url: 'https://github.com/digitalsoupteam/rwa-platform-frontend' },
     { label: '{github smart-contracts link}', url: 'https://github.com/digitalsoupteam/rwa-platform' },
+    { label: '{figma design link}', url: 'https://www.figma.com/design/lNA8AJaw8yeKWM69RuMDKu/Slices---Public-share?node-id=2305-6&t=3ekxpMRQxItaIXBE-1'},
   ],
 }

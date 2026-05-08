@@ -153,7 +153,7 @@ export default function CasePage({
 
           {/* intro */}
           <p
-            className="text-[#aeaeae] text-[15px] leading-normal w-full  mt-[15px]"
+            className="text-[#aeaeae] text-[25px] leading-normal w-full  mt-[30px]"
             style={{ fontFamily: "'Classic Console Neue', sans-serif" }}
           >
             {currentCase.description}
