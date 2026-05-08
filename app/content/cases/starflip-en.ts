@@ -1,34 +1,37 @@
-import { CaseContent } from '@/types'
+import { CaseContent } from "@/types";
 
 export const starflipEn: CaseContent = {
   hero: {
-    breadcrumb: 'dashewski.com/',
-    back: '← BACK',
-    tag: '|-starflip',
-    here: '← YOU HERE',
-    name: 'starflip',
-    subtitle: '/ casino-like\nplayer vs player game',
+    breadcrumb: "dashewski.io/",
+    back: "← BACK",
+    tag: "|-starflip",
+    here: "← YOU HERE",
+    name: "starflip",
+    subtitle: "/ casino-like\nplayer vs player game",
   },
-  description: `StarFlip, with its PvP format, was my own idea. In 2025, I secured a small initial round of investment and assembled a small team. I took on the role of technical lead: I was responsible for the architecture, backend, smart contracts, and overall product management — from the idea to launch.`,
+  description: `StarFlip started with a question I couldn't stop thinking about: why does the house always win in gambling? The answer's pretty straightforward - somebody's gotta pay for the casino owner's new fast car. I already have mine, so I just cut the house out of the equation and let players go head-to-head. Equal odds, fair game, platform takes a small fee. Got my first funding round in 2025 and started building.`,
   sections: [
     {
-      title: '// We generated a mascot using AI',
-      text: `To bring the project to fruition, we needed the help of two more specialists: a designer and a front-end developer. I was responsible for the backend — the game engine, payout logic, moves and results — as well as blockchain development: smart contracts for the player depository. The final tech stack: TS, Node.js, Redis, SQLite, Express, Next.js, Solidity.`,
+      title: "// How the team came together",
+      text: `I couldn't really be bothered to work on the project on my own - so i brought on a designer and a frontend dev. I took the backend myself: game engine, move logic, payouts, results. Plus the blockchain side: smart contracts for the deposit vault where players lock their funds. The stack ended up refreshingly no-nonsense - TS, Node.js, Redis, SQLite, Express, Next.js, Solidity.`,
     },
     {
-      title: '// desktop game',
-      text: `I decided to base my first game on the Grid Game. In my PvP version: both players place a bet, say $50, and the platform pairs them up for a match. Their combined $50+$50 bet is divided across 12 cells by a crypto-randomiser, with a portion of the money hidden under each cell. The players take turns opening the cells, six at a time. Whoever is lucky enough to collect more than they bet is the lucky dog.`,
+      title: "// How the game works",
+      text: `The first game we shipped is a PvP Grid Game. Two players place their bets - say $50 each. The platform matches them, pools the $100, and uses on-chain randomness to scatter it across 12 tiles - a random chunk hiding under each one. Players take turns flipping tiles, six apiece. Whoever uncovers more than they put in walks away with free money basically. Clean, transparent, everything settled on Blockchain.`,
     },
     {
-      title: '// gaming process',
-      text: `I launched the first version of the game on the desktop platform. I wanted to start with the crypto gaming audience. Most users in the DeFi sector use desktops, as there is still no convenient way (as of 2026!) to connect crypto wallets from a mobile phone. WalletConnect doesn't recognise mobile MetaMask or other wallets. We started advertising with a focus on Asia, and to our surprise, there was practically no desktop traffic there. Almost all players tried to log in from their phones.`,
+      title: "// First launch and the lesson nobody warned us about",
+      text: `We went desktop-first - targeting the DeFi crowd that historically lives on their computers. The logic was solid: decent mobile crypto wallet support basically doesn't exist in 2026 (shoutout to WalletConnect that doesn't recognize the MetaMask Mobile app). Ran ads across Asia and found out fast that desktop traffic in Vietnam, India, across the whole region - basically zero. Everyone tried to play from their phone. The whole approach needed a rethink.`,
     },
     {
-      title: '// Development of a mobile version',
-      text: `After the initial launch, I re-evaluated the game and set about reworking it. The solution: to create a mobile version and upload it to Telegram, so that the game is accessible with a single click within Telegram — this simplifies the onboarding process and opens up access to millions of users via native advertising and Telegram communities. At the same time, I removed the wallet integration and implemented a balance system with top-ups via a unique address generated upon entering the game — this way, players can do without WalletConnect. Additionally, I introduced ranking points for a future airdrop of the project's token, as part of the marketing mechanics.`,
+      title: "// The rework: Telegram and a new way in",
+      text: `After that launch I went back and rebuilt the thing properly. Shipped a mobile version packaged as a Telegram Mini App - one tap to open, no downloads, lives right inside the messenger where the audience already hangs out. Dropped WalletConnect entirely: now when you sign in, a unique deposit address gets generated in your account, players send crypto straight to it - zero wallet connection drama. Added a ranked points system with a future token airdrop in mind, as a community growth mechanic.`,
     },
   ],
   github: [
-    { label: "{github backend link}", url: "https://github.com/digitalsoupteam/starflipbackend/" },
+    {
+      label: "{github backend link}",
+      url: "https://github.com/digitalsoupteam/starflipbackend/",
+    },
   ],
-}
+};

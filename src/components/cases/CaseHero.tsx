@@ -19,7 +19,6 @@ export default function CaseHero({ t, lang, setLang, color }: CaseHeroProps) {
 
   return (
     <section className="flex flex-col pt-[80px] w-full relative">
-
       {/* Top row */}
       <div className="flex items-start justify-between w-full mb-[40px]">
         {/* Left: breadcrumb nav */}
@@ -31,7 +30,9 @@ export default function CaseHero({ t, lang, setLang, color }: CaseHeroProps) {
           <div className="flex items-center gap-[20px]">
             <span
               className="text-[#aeaeae] text-[40px] leading-none cursor-pointer hover:opacity-70 transition-opacity"
-              onClick={() => router.push("/")}
+              onClick={() => {
+                window.location.href = "/";
+              }}
             >
               {t.hero.breadcrumb}
             </span>

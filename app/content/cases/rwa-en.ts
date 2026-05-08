@@ -2,32 +2,32 @@ import { CaseContent } from '@/types'
 
 export const rwaEn: CaseContent = {
   hero: {
-    breadcrumb: 'dashewski.com/',
+    breadcrumb: 'dashewski.io/',
     back: '← BACK',
     tag: '|-rwa',
     here: '← YOU HERE',
     name: 'rwa platform',
     subtitle: 'Business tokenization platform\nand RWA-assets trading',
   },
-  description: `We have developed a blockchain platform that enables businesses—from local manufacturers to IT start-ups—to attract investment from around the world without unnecessary barriers. It is a unified Web3 ecosystem where entrepreneurs interact directly with investors, and all processes are transparent and automated.`,
-  sections: [
-    {
-      title: '// For users',
-      text: `Investors purchase project tokens — ‘crypto-shares’ — thereby acquiring an ownership stake and the right to future profits. The terms are set out in the protocol, including the return of invested funds. Once the campaign is complete, the tokens immediately become liquid thanks to the built-in AMM market, where they can be freely traded. Each user has a personal account with a wide range of features for managing and interacting with the platform.`,
-    },
-    {
-      title: '// For business',
-      text: `For businesses, the process takes the form of a straightforward pipeline: project registration, KYC and verification, token issuance, and the launch of an investment campaign. A personal dashboard is provided for monitoring and managing all processes. All operations are facilitated by smart contracts, ensuring transparency and compliance with security requirements.`,
-    },
-    {
-      title: '// Security',
-      text: `The platform prioritises security and analytics: projects undergo multi-level verification, including AI assessment of business plans and financial data with risk scoring. Smart contracts use UUPS proxies, feature an emergency stop mechanism, and undergo a mandatory external audit prior to launch.`,
-    },
-    {
-      title: '// Technology stack ',
-      text: `Governance is implemented via a DAO: token holders participate in votes on the system’s development. Technologically, the platform is built on Bun.js and Elysia.js (TypeScript), using MongoDB and Redis, with RabbitMQ and BullMQ queues. The infrastructure comprises Docker, Nginx and Cloudflare, with monitoring via Prometheus and Grafana, ensuring stability and scalability.`,
-    },
-  ],
+  description: `Picture this: you've got a real business but no access to global capital. Or you're an investor tired of paying middlemen just to exist. We built an RWA platform that fixes both - a Web3 ecosystem where real-world assets get tokenized and businesses connect with investors directly, no banks, no brokers, just crypto.`,
+sections: [
+  {
+    title: '// If youre an investor',
+    text: `Find a project you believe in - buy the tokens. This isn't buying into hype, it's a tokenized stake in a real business with actual profit rights. Entry, exit, and refund conditions are locked into the protocol - not buried in some email attachment, but written directly into smart-contracts. Once the fundraising campaign wraps up, tokens are immediately tradable through the built-in AMM (think Pump.fun, but for something that actually matters). Everything shows up in your dashboard: what you hold, what it's worth, what's happening.`,
+  },
+  {
+    title: '// If youre a business',
+    text: `Forget the endless calls, pitch meetings, and NDAs going back and forth. Register your project on the platform, pass verification (you're not here to rug people, right?), issue your tokens - and your fundraising campaign goes live. Investors from anywhere in the world can find you, not just the ones you managed to cold-email a deck to. People buy your tokens, capital comes in. Your dashboard tracks the whole pipeline in real time, smart-contracts handle the operational side. You focus on actually building, not on deal admin. Simple as that.`,
+  },
+  {
+    title: '// Why you can trust it',
+    text: `We're not asking anyone to take projects on faith. RWA means real assets and real accountability, so every project goes through multi-layer due diligence - including AI analysis of business plans and financials with genuine risk scoring. Smart contracts run on UUPS proxy, have an emergency stop built in, and go through external audit before launch. This isn't "we take security seriously" copy-pasted into a footer — we actually built a system that vets what's worth investing in.`,
+  },
+  {
+    title: '// Whats under the hood',
+    text: `Platform governance runs through a DAO (Decentralized Autonomous Organization): users who buy and lock platform tokens get real voting power over where things go — proper DeFi. The tech stack: Bun.js and Elysia.js on TypeScript, MongoDB, Redis, job queues via RabbitMQ and BullMQ. Everything runs in Docker behind Nginx and Cloudflare, monitored through Prometheus and Grafana. Sounds like a standard stack — and that's exactly the point. It works, instead of being "our innovative proprietary architecture" with nothing to back it up.`,
+  },
+],
   github: [
     { label: '{github backend link}', url: 'https://github.com/digitalsoupteam/rwa-platform-backend' },
     { label: '{github frontend link}', url: 'https://github.com/digitalsoupteam/rwa-platform-frontend' },

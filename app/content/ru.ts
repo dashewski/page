@@ -3,7 +3,7 @@ import { Content } from "@/types";
 export const ru: Content = {
   hero: {
     name: "Ник Дашевски",
-    tag1: "/ Бекенд, крипто, аи",
+    tag1: "/ Бекенд, крипто, ИИ",
     tag1sub1: "Product strategy & MVP planning,",
     tag1sub2: "end-to-end product development",
     tag2line1: "/ it-предприниматель",
