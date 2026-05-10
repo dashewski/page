@@ -32,13 +32,13 @@ export const en: Content = {
       {
         id: "01",
         color: "#6cad5e",
-        name: "*** starflip casino-like pvp game ***",
+        name: "*** Solo built a fair PvP crypto game inspired by casino — but without the casino ***",
         tags: "solo-dev, backend, smart-contracts, design, tgminapp",
       },
       {
         id: "02",
         color: "#9a38af",
-        name: "*** rwa tokenization platform ***",
+        name: "*** Built with a team: platform for tokenizing businesses and trading RWA assets ***",
         tags: "team-leading, smart-contracts, defi, backend, design",
       },
     ],

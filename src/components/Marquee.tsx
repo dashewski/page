@@ -10,12 +10,7 @@ interface MarqueeSectionProps {
 export default function MarqueeSection({ t }: MarqueeSectionProps) {
   return (
     <section className="flex items-stretch gap-[28px] w-full overflow-hidden">
-      <ContactBlock t={t} variant="stacked" />      <a
-        href="https://t.me/dashewski/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="no-underline"
-      ></a>
+      <ContactBlock t={t} variant="stacked" />
 
       <div className="bg-[#9a38af] flex-1 overflow-hidden flex items-center">
         

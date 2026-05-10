@@ -1,34 +1,41 @@
-'use client'
+"use client";
 
-import { useRouter } from 'next/navigation'
-import { Content } from '@/types'
+import { useRouter } from "next/navigation";
+import { Content } from "@/types";
 
-const VISITOR = "'Visitor TT2 Pro', sans-serif"
-
-
+const VISITOR = "'Visitor TT2 Pro', sans-serif";
 
 interface ExamplesProps {
-  t: Content
+  t: Content;
 }
 
 const caseSlug: Record<string, string> = {
-  '01': 'starflip',
-  '02': 'rwa',
-}
+  "01": "starflip",
+  "02": "rwa",
+};
 
 export default function Examples({ t }: ExamplesProps) {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
-    <section id="examples" className="flex flex-col gap-[40px] items-start w-full">
-      <p className="text-[#aeaeae] text-[100px] leading-normal" style={{ fontFamily: VISITOR }}>
+    <section
+      id="examples"
+      className="flex flex-col gap-[40px] items-start w-full"
+    >
+      <p
+        className="text-[#aeaeae] text-[100px] leading-normal"
+        style={{ fontFamily: VISITOR }}
+      >
         {t.examples.title}
       </p>
 
       {t.examples.cases.map((c) => (
         <div key={c.id} className="flex flex-col gap-[20px] items-start w-full">
           <div className="flex items-center justify-between w-full">
-            <div className="flex gap-[20px] items-center text-[30px]" style={{ fontFamily: VISITOR }}>
+            <div
+              className="flex gap-[20px] items-center text-[30px]"
+              style={{ fontFamily: VISITOR }}
+            >
               <span className="text-[#aeaeae]">[/&gt;</span>
               <span style={{ color: c.color }}>{c.id}</span>
             </div>
@@ -43,7 +50,11 @@ export default function Examples({ t }: ExamplesProps) {
               >
                 <span
                   className="text-[#2c2c2c] text-[30px] leading-none whitespace-nowrap absolute"
-                  style={{ fontFamily: VISITOR, top: '50%', transform: 'translateY(-50%)' }}
+                  style={{
+                    fontFamily: VISITOR,
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                  }}
                 >
                   {t.examples.viewButton}
                 </span>
@@ -53,16 +64,22 @@ export default function Examples({ t }: ExamplesProps) {
 
           <div className="flex flex-col items-start pl-[50px] w-[657px]">
             <div className="bg-[#aeaeae] inline-flex items-center justify-center">
-              <p className="text-[#2c2c2c] text-[40px] leading-normal whitespace-nowrap" style={{ fontFamily: VISITOR }}>
+              <p
+                className="text-[#2c2c2c] text-[40px] leading-normal"
+                style={{ fontFamily: VISITOR }}
+              >
                 {c.name}
               </p>
             </div>
-            <p className="text-[#aeaeae] text-[30px] leading-normal" style={{ fontFamily: VISITOR }}>
+            <p
+              className="text-[#aeaeae] text-[30px] leading-normal"
+              style={{ fontFamily: VISITOR }}
+            >
               {c.tags}
             </p>
           </div>
         </div>
       ))}
     </section>
-  )
+  );
 }
