@@ -37,7 +37,7 @@ export default function MobileCaseHero({
             onClick={() => setLang("en")}
             className={`cursor-pointer transition-colors ${lang === "en" ? "text-[#aeaeae]" : "text-[#2c2c2c]"}`}
           >
-            eng
+            En
           </span>
         </div>
       </div>

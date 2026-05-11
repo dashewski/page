@@ -39,7 +39,7 @@ export default function Hero({ t, lang, setLang }: HeroProps) {
               lang === "en" ? "text-[#aeaeae]" : "text-[#2c2c2c]"
             }`}
           >
-            en
+            En
           </span>
         </div>
       </div>
