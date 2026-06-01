@@ -24,8 +24,13 @@ export const starflipEn: CaseContent = {
       text: `We went desktop-first - targeting the DeFi crowd that historically lives on their computers. The logic was solid: decent mobile crypto wallet support basically doesn't exist in 2026 (shoutout to WalletConnect that doesn't recognize the MetaMask Mobile app). Ran ads across Asia and found out fast that desktop traffic in Vietnam, India, across the whole region - basically zero. Everyone tried to play from their phone. The whole approach needed a rethink.`,
     },
     {
-      title: "// The rework: Telegram and a new way in",
-      text: `After that launch I went back and rebuilt the thing properly. Shipped a mobile version packaged as a Telegram Mini App - one tap to open, no downloads, lives right inside the messenger where the audience already hangs out. Dropped WalletConnect entirely: now when you sign in, a unique deposit address gets generated in your account, players send crypto straight to it - zero wallet connection drama. Added a ranked points system with a future token airdrop in mind, as a community growth mechanic.`,
+      title: "// Solo rework: Telegram and a new way in",
+      text: `After that launch I went back and full solo rebuilt the thing properly. Shipped a mobile version packaged as a Telegram Mini App - one tap to open, no downloads, lives right inside the messenger where the audience already hangs out. Dropped WalletConnect entirely: now when you sign in, a unique deposit address gets generated in your account, players send crypto straight to it - zero wallet connection drama. Added a ranked points system with a future token airdrop in mind, as a community growth mechanic.`,
+    },
+    {
+      title: "// Mobile version now available to play",
+      text: `Everything I've built from scratch is now live and available. You can play either on your computer via Telegram or on your phone. I've added separate voiceovers and revamped the referral link system; now referrals earn you a 50% commission on the service fee plus 5 points per game. I'm currently finalising the player table for a clear leaderboard. Social profiles, how to play and other titles done too. Go on, give it a go – I didn't go to all that trouble for nothing!`,
+      video: "/videos/starflip.mp4",
     },
   ],
   github: [

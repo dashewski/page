@@ -17,7 +17,9 @@ export default function CaseBlock({ section, index, imageSrc }: CaseBlockProps) 
       {/* pic */}
       <div className="flex justify-center w-full">
         <div style={{ width: '719px', height: '449px' }}>
-          {imageSrc ? (
+          {section.video ? (
+            <video src={section.video} autoPlay loop muted playsInline className="w-full h-full object-cover" />
+          ) : imageSrc ? (
             <img src={imageSrc} alt="" className="w-full h-full object-cover" />
           ) : (
             <div className="w-full h-full bg-[#1e1e1e] flex items-center justify-center">

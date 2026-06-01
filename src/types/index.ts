@@ -74,6 +74,7 @@ export interface CaseContent {
   sections: {
     title: string
     text: string
+    video?: string
   }[]
   github: {
     label: string

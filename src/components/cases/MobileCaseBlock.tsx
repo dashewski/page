@@ -15,7 +15,9 @@ export default function MobileCaseBlock({ section, index, imageSrc }: MobileCase
     <div className="flex flex-col gap-[10px] w-full">
       {/* pic */}
       <div className="w-full" style={{ aspectRatio: '343/214' }}>
-        {imageSrc ? (
+        {section.video ? (
+          <video src={section.video} autoPlay loop muted playsInline className="w-full h-full object-cover" />
+        ) : imageSrc ? (
           <img src={imageSrc} alt="" className="w-full h-full object-cover" />
         ) : (
           <div className="w-full h-full bg-[#1e1e1e] flex items-center justify-center">
