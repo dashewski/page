@@ -1,45 +1,48 @@
 import { CaseContent } from '@/types'
 
 const VISITOR = "'Visitor TT2 Pro', sans-serif"
-const CONSOLE = "'Classic Console Neue', sans-serif"
 const CHAKRA = "'Chakra Petch', sans-serif"
 
 interface CaseBlockProps {
   section: CaseContent['sections'][0]
   index: number
   imageSrc?: string
+  color: string
 }
 
-export default function CaseBlock({ section, index, imageSrc }: CaseBlockProps) {
+export default function CaseBlock({ section, index, imageSrc, color }: CaseBlockProps) {
   return (
-    <div className="flex flex-col gap-[20px] w-full">
+    <div className="flex flex-col gap-[24px] w-full">
 
-      {/* pic */}
-      <div className="flex justify-center w-full">
-        <div style={{ width: '719px', height: '449px' }}>
-          {section.video ? (
-            <video src={section.video} autoPlay loop muted playsInline className="w-full h-full object-cover" />
-          ) : imageSrc ? (
-            <img src={imageSrc} alt="" className="w-full h-full object-cover" />
-          ) : (
-            <div className="w-full h-full bg-[#1e1e1e] flex items-center justify-center">
-              <span className="text-[#2c2c2c] text-[20px]" style={{ fontFamily: VISITOR }}>
-                [ image {index + 1} ]
-              </span>
-            </div>
-          )}
-        </div>
+      {/* number + title */}
+      <div className="flex items-baseline gap-[20px]">
+        <span className="text-[30px] leading-none" style={{ fontFamily: VISITOR, color }}>
+          {String(index + 1).padStart(2, '0')}
+        </span>
+        <p className="text-[#aeaeae] text-[40px] leading-none" style={{ fontFamily: VISITOR }}>
+          {section.title}
+        </p>
       </div>
 
-      {/* name */}
-      <p className="text-[#aeaeae] text-[40px] leading-normal flex justify-center " style={{ fontFamily: VISITOR }}>
-        {section.title}
-      </p>
-
       {/* text */}
-      <p className="text-[#aeaeae] text-[25px] leading-normal w-full" style={{ fontFamily: CHAKRA }}>
+      <p className="text-[#aeaeae] text-[22px] leading-relaxed w-full" style={{ fontFamily: CHAKRA }}>
         {section.text}
       </p>
+
+      {/* media */}
+      <div className="w-full aspect-[719/449]">
+        {section.video ? (
+          <video src={section.video} autoPlay loop muted playsInline className="w-full h-full object-cover" />
+        ) : imageSrc ? (
+          <img src={imageSrc} alt="" className="w-full h-full object-cover" />
+        ) : (
+          <div className="w-full h-full bg-[#1e1e1e] flex items-center justify-center">
+            <span className="text-[#2c2c2c] text-[20px]" style={{ fontFamily: VISITOR }}>
+              [ image {index + 1} ]
+            </span>
+          </div>
+        )}
+      </div>
 
     </div>
   )

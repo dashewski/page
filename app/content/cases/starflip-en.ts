@@ -9,34 +9,35 @@ export const starflipEn: CaseContent = {
     name: "starflip",
     subtitle: "/ casino-like\nplayer vs player game",
   },
-  description: `StarFlip started with a question I couldn't stop thinking about: why does the house always win in gambling? The answer's pretty straightforward - somebody's gotta pay for the casino owner's new fast car. I already have mine, so I just cut the house out of the equation and let players go head-to-head. Equal odds, fair game, platform takes a small fee. Got my first funding round in 2025 and started building.`,
+  description: `It started with a question: why does the casino always win? The answer is simple: the owner needs a fast car. I already have one, so I took the casino out of the equation and designed a game where players compete against each other. Equal odds, a fair outcome, and the platform takes only a fee. In 2025 I raised my first investment and started building.`,
   sections: [
     {
-      title: "// How the team came together",
-      text: `I couldn't really be bothered to work on the project on my own - so i brought on a designer and a frontend dev. I took the backend myself: game engine, move logic, payouts, results. Plus the blockchain side: smart contracts for the deposit vault where players lock their funds. The stack ended up refreshingly no-nonsense - TS, Node.js, Redis, SQLite, Express, Next.js, Solidity.`,
+      title: "The team",
+      text: `I didn't feel like carrying it alone, so I found a designer and a frontend developer. I took the backend: I wrote the game engine, the turn logic, payouts and the smart contracts for deposits. Stack: TypeScript, Node.js, Express, Redis, SQLite, Next.js, Solidity (Hardhat).`,
     },
     {
-      title: "// How the game works",
-      text: `The first game we shipped is a PvP Grid Game. Two players place their bets - say $50 each. The platform matches them, pools the $100, and uses on-chain randomness to scatter it across 12 tiles - a random chunk hiding under each one. Players take turns flipping tiles, six apiece. Whoever uncovers more than they put in walks away with free money basically. Clean, transparent, everything settled on Blockchain.`,
+      title: "How the game works",
+      text: `The first game I built was PvP Grid Game. Two players stake, say, $50 each. The platform matches them and uses cryptographic randomness to spread the $100 pot across 12 cells. Players take turns opening 6 cells each. Whoever takes out more than they put in wins. Everything is transparent and recorded on the blockchain.`,
     },
     {
-      title: "// First launch and the lesson nobody warned us about",
-      text: `We went desktop-first - targeting the DeFi crowd that historically lives on their computers. The logic was solid: decent mobile crypto wallet support basically doesn't exist in 2026 (shoutout to WalletConnect that doesn't recognize the MetaMask Mobile app). Ran ads across Asia and found out fast that desktop traffic in Vietnam, India, across the whole region - basically zero. Everyone tried to play from their phone. The whole approach needed a rethink.`,
+      title: "Lesson from the first launch",
+      text: `At first I built a desktop version, since DeFi players sit at computers. But when we started advertising in Asia, it turned out that players in Vietnam and India are almost all on phones. We had to rethink the product.`,
     },
     {
-      title: "// Solo rework: Telegram and a new way in",
-      text: `After that launch I went back and full solo rebuilt the thing properly. Shipped a mobile version packaged as a Telegram Mini App - one tap to open, no downloads, lives right inside the messenger where the audience already hangs out. Dropped WalletConnect entirely: now when you sign in, a unique deposit address gets generated in your account, players send crypto straight to it - zero wallet connection drama. Added a ranked points system with a future token airdrop in mind, as a community growth mechanic.`,
+      title: "Solo rework: Telegram",
+      text: `After that I reworked everything on my own. I built a mobile version as a Telegram Mini App: it opens in one tap, right inside the messenger, with nothing to install. I dropped WalletConnect: every player gets a personal deposit address in their account and sends crypto directly. I also added rating points ahead of a future token airdrop, a growth mechanic for the community. Stack: Next.js with the Telegram Apps SDK and a Node.js bot.`,
     },
     {
-      title: "// Mobile version now available to play",
-      text: `Everything I've built from scratch is now live and available. You can play either on your computer via Telegram or on your phone. I've added separate voiceovers and revamped the referral link system; now referrals earn you a 50% commission on the service fee plus 5 points per game. I'm currently finalising the player table for a clear leaderboard. Social profiles, how to play and other titles done too. Go on, give it a go – I didn't go to all that trouble for nothing!`,
+      title: "Playable now",
+      text: `Everything I built from scratch is live: you can play in Telegram from a computer or a phone. I added sound and reworked referrals: a referrer gets 50% of the platform fee and 5 pts for every game. I'm finishing a leaderboard. Socials, how-to-play and articles are done.`,
       video: "/videos/starflip.mp4",
     },
   ],
+
   github: [
     {
       label: "{github backend link}",
-      url: "https://github.com/dashewski/starflipbackend/",
+      url: "https://github.com/dashewski/starflip-gridgame-backend",
     },        {
       label: "{figma design link}",
       url: "https://www.figma.com/design/m0z6QvQyizFoH6BZbAo5lr/Astra-Game---Public-share?node-id=0-1&t=XQTXoF705VimTeIv-1",     

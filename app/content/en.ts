@@ -34,13 +34,13 @@ export const en: Content = {
       {
         id: "01",
         color: "#6cad5e",
-        name: "*** Solo built a fair PvP crypto game inspired by casino — but without the casino ***",
+        name: "*** Solo built a fair PvP crypto game: like a casino, but without the casino ***",
         tags: "",
       },
       {
         id: "02",
         color: "#9a38af",
-        name: "*** Built with a team: platform for tokenizing businesses and trading RWA assets ***",
+        name: "*** Built a team and developed an exchange for creating and trading tokenized assets ***",
         tags: "",
       },
     ],

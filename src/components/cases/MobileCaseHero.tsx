@@ -1,29 +1,39 @@
 "use client";
 
 import { CaseContent, Lang } from "@/types";
+import { useRouter } from "next/navigation";
 
 const VISITOR = "'Visitor TT2 Pro', sans-serif";
-const CHAKRA = "'Chakra Petch', sans-serif";
 
 interface MobileCaseHeroProps {
   t: CaseContent;
   lang: Lang;
   setLang: (lang: Lang) => void;
-  color: string;
 }
 
 export default function MobileCaseHero({
   t,
   lang,
   setLang,
-  color,
 }: MobileCaseHeroProps) {
+  const router = useRouter();
+
   return (
     <section className="flex flex-col pt-[20px] w-full">
-      {/* Lang switcher */}
-      <div className="flex justify-end w-full mb-[30px]">
+      {/* Top row: back + lang switcher */}
+      <div className="flex items-start justify-between w-full mb-[30px]">
+        {/* replace, not push: otherwise each visit stacks history entries and browser Back loops into the case */}
+        <button
+          type="button"
+          onClick={() => router.replace("/#mobileExamples")}
+          className="text-[#aeaeae] text-[30px] leading-none cursor-pointer hover:opacity-70 transition-opacity"
+          style={{ fontFamily: VISITOR }}
+        >
+          {t.hero.back}
+        </button>
+
         <div
-          className="flex gap-[10px] items-center text-[30px]"
+          className="flex gap-[10px] items-center text-[30px] leading-none"
           style={{ fontFamily: VISITOR }}
         >
           <span
@@ -42,48 +52,6 @@ export default function MobileCaseHero({
         </div>
       </div>
 
-      {/* Breadcrumb nav */}
-      <div
-        className="flex flex-col gap-[15px] mb-[30px]"
-        style={{ fontFamily: VISITOR }}
-      >
-        <div className="flex items-center gap-[15px]">
-          <span
-            className="text-[#aeaeae] text-[30px] leading-none cursor-pointer hover:opacity-70"
-            onClick={() => {
-              window.location.href = "/";
-            }}
-          >
-            {t.hero.breadcrumb}
-          </span>
-        </div>
-        <div className="flex items-center gap-[15px]">
-          <span className="text-[#aeaeae] text-[30px] leading-none">
-            |#cases
-          </span>
-          <span
-            className="text-[#2c2c2c] text-[15px] cursor-pointer hover:text-[#aeaeae] transition-colors"
-            style={{ fontFamily: CHAKRA }}
-            onClick={() => {
-              window.location.href = "/#mobileExamples";
-            }}
-          >
-            {t.hero.back}
-          </span>
-        </div>
-        <div className="flex items-center gap-[15px]">
-          <span className="text-[30px] leading-none" style={{ color }}>
-            {t.hero.tag}
-          </span>
-          <span
-            className="text-[#2c2c2c] text-[15px]"
-            style={{ fontFamily: CHAKRA }}
-          >
-            ← YOU HERE
-          </span>
-        </div>
-      </div>
-
       {/* Name */}
       <p
         className="text-[#aeaeae] text-[70px] leading-none mb-[20px]"
@@ -95,7 +63,7 @@ export default function MobileCaseHero({
       {/* Subtitle */}
       <div className="bg-[#9a38af] inline-block w-fit overflow-hidden">
         <p
-          className="text-[#aeaeae] text-[40px] leading-none whitespace-pre-wrap -mt-[0.4em] -mb-[0.15em]"
+          className="text-[#aeaeae] text-[20px] max-[360px]:text-[17px] leading-none whitespace-pre-wrap -mt-[0.3em] -mb-[0.15em]"
           style={{ fontFamily: VISITOR }}
         >
           {t.hero.subtitle}

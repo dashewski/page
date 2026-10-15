@@ -65,61 +65,48 @@ export default function CasePage({
     <div className="relative w-full min-h-screen bg-[#131313] overflow-x-hidden">
       {/* ───── DESKTOP ───── */}
       <div className="hidden md:block relative">
-        <div
-          className="absolute pointer-events-none"
-          style={{
-            top: "-100px",
-            left: "calc(50vw - 300px)",
-            width: "600px",
-            height: "600px",
-            transform: "rotate(90deg)",
-            zIndex: 0,
-          }}
-        >
-          <img
-            src="/images/Background photo.svg"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <div className="relative mx-auto w-[1200px] flex flex-col gap-[120px]">
+          <CaseHero t={currentCase} lang={lang} setLang={setLang} />
 
-        <div className="relative mx-auto w-[1200px] flex flex-col gap-[150px]">
-          <CaseHero
-            t={currentCase}
-            lang={lang}
-            setLang={setLang}
-            color={color}
-          />
+          <div className="flex flex-col gap-[100px] w-[720px] self-center">
+            <p
+              className="text-[#aeaeae] text-[26px] leading-relaxed w-full"
+              style={{ fontFamily: "'Chakra Petch', sans-serif" }}
+            >
+              {currentCase.description}
+            </p>
 
-          <p
-            className="text-[#aeaeae] text-[25px] leading-normal w-full"
-            style={{ fontFamily: "'Classic Console Neue', sans-serif" }}
-          >
-            {currentCase.description}
-          </p>
+            {currentCase.sections.map((section, i) => (
+              <CaseBlock
+                key={i}
+                section={section}
+                index={i}
+                imageSrc={images[i]}
+                color={color}
+              />
+            ))}
+          </div>
 
-          {currentCase.sections.map((section, i) => (
-            <CaseBlock
-              key={i}
-              section={section}
-              index={i}
-              imageSrc={images[i]}
-            />
-          ))}
-
-          <div className="flex flex-col gap-[20px] w-full">
+          <div className="grid grid-cols-2 gap-[20px] w-full">
             {currentCase.github.map((link, i) => (
-              <div key={i} className="flex items-center w-full">
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#aeaeae] text-[40px] hover:opacity-70 transition-opacity"
+              <a
+                key={i}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-[40px] px-[24px] w-full last:odd:col-span-2 flex items-center justify-center bg-[#6cad5e] no-underline cursor-pointer
+                  shadow-[inset_-2px_-2px_0px_#3d6b35,inset_2px_2px_0px_#8fd47f]
+                  hover:bg-[#5a9e4c]
+                  active:shadow-[inset_2px_2px_0px_#3d6b35,inset_-2px_-2px_0px_#8fd47f] active:translate-y-[1px]
+                  transition-all"
+              >
+                <span
+                  className="text-[#2c2c2c] text-[30px] leading-none whitespace-nowrap"
                   style={{ fontFamily: VISITOR }}
                 >
                   {link.label}
-                </a>
-              </div>
+                </span>
+              </a>
             ))}
           </div>
 
@@ -144,17 +131,12 @@ export default function CasePage({
           className="relative mx-auto w-full px-[16px] flex flex-col "
           style={{ maxWidth: "480px" }}
         >
-          <MobileCaseHero
-            t={currentCase}
-            lang={lang}
-            setLang={setLang}
-            color={color}
-          />
+          <MobileCaseHero t={currentCase} lang={lang} setLang={setLang} />
 
           {/* intro */}
           <p
-            className="text-[#aeaeae] text-[25px] leading-normal w-full  mt-[30px]"
-            style={{ fontFamily: "'Classic Console Neue', sans-serif" }}
+            className="text-[#aeaeae] text-[18px] leading-relaxed w-full mt-[40px]"
+            style={{ fontFamily: "'Chakra Petch', sans-serif" }}
           >
             {currentCase.description}
           </p>
@@ -166,24 +148,32 @@ export default function CasePage({
                 section={section}
                 index={i}
                 imageSrc={images[i]}
+                color={color}
               />
             </div>
           ))}
 
           {/* GitHub links */}
-          <div className="flex flex-col gap-[15px] w-full  mt-[70px]">
+          <div className="flex flex-col gap-[12px] w-full mt-[70px]">
             {currentCase.github.map((link, i) => (
-              <div key={i} className="flex items-center w-full">
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#aeaeae] text-[20px] hover:opacity-70 transition-opacity"
+              <a
+                key={i}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full min-h-[36px] px-[12px] py-[6px] flex items-center justify-center bg-[#6cad5e] no-underline cursor-pointer
+                  shadow-[inset_-2px_-2px_0px_#3d6b35,inset_2px_2px_0px_#8fd47f]
+                  hover:bg-[#5a9e4c]
+                  active:shadow-[inset_2px_2px_0px_#3d6b35,inset_-2px_-2px_0px_#8fd47f] active:translate-y-[1px]
+                  transition-all"
+              >
+                <span
+                  className="text-[#2c2c2c] text-[20px] leading-tight text-center"
                   style={{ fontFamily: VISITOR }}
                 >
                   {link.label}
-                </a>
-              </div>
+                </span>
+              </a>
             ))}
           </div>
 
