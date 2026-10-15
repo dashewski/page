@@ -22,6 +22,20 @@ export default function MobileAboutInfo({ t }: MobileAboutInfoProps) {
           )
         )}
       </div>
+      <a
+        href={t.about.cvUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full h-[30px] no-underline flex items-center justify-center bg-[#6cad5e] cursor-pointer
+          shadow-[inset_-2px_-2px_0px_#3d6b35,inset_2px_2px_0px_#8fd47f]
+          hover:bg-[#5a9e4c]
+          active:shadow-[inset_2px_2px_0px_#3d6b35,inset_-2px_-2px_0px_#8fd47f] active:translate-y-[1px]
+          transition-all"
+      >
+        <span className="text-[#2c2c2c] text-[20px] leading-none whitespace-nowrap" style={{ fontFamily: VISITOR }}>
+          {t.about.cvButton}
+        </span>
+      </a>
     </section>
   )
 }

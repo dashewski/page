@@ -34,7 +34,7 @@ export default function AboutInfo({ t }: AboutInfoProps) {
             href={t.about.cvUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[324px] h-[30px] flex items-center justify-center bg-[#6cad5e] cursor-pointer relative
+            className="w-[324px] h-[30px] no-underline flex items-center justify-center bg-[#6cad5e] cursor-pointer relative
               shadow-[inset_-2px_-2px_0px_#3d6b35,inset_2px_2px_0px_#8fd47f]
               hover:bg-[#5a9e4c]
               active:shadow-[inset_2px_2px_0px_#3d6b35,inset_-2px_-2px_0px_#8fd47f] active:translate-y-[1px]

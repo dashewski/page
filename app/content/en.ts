@@ -19,7 +19,7 @@ export const en: Content = {
   },
   about: {
     title: "about info",
-    cvButton: "{click open CV}",
+    cvButton: "{open CV button}",
     cvUrl: "#", // TODO: link to CV
     text: [
       `/* Leading IT & digital projects since 2017, developing since 2021: backend, AI, web3, and financial services.`,
