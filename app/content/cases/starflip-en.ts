@@ -36,7 +36,7 @@ export const starflipEn: CaseContent = {
   github: [
     {
       label: "{github backend link}",
-      url: "https://github.com/digitalsoupteam/starflipbackend/",
+      url: "https://github.com/dashewski/starflipbackend/",
     },        {
       label: "{figma design link}",
       url: "https://www.figma.com/design/m0z6QvQyizFoH6BZbAo5lr/Astra-Game---Public-share?node-id=0-1&t=XQTXoF705VimTeIv-1",     

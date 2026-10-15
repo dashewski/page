@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Nik Dashewski',
-  description: 'IT-entrepreneur & developer. Backend, crypto, AI.',
+  description: 'Product-director & developer. Backend, web3, AI and financial services.',
 }
 
 export default function RootLayout({

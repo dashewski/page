@@ -13,10 +13,10 @@ export default function MobileAboutInfo({ t }: MobileAboutInfoProps) {
       <p className="text-[50px] leading-normal" style={{ fontFamily: VISITOR }}>
         {t.about.title}
       </p>
-      <div className="text-[25px] w-full leading-normal" style={{ fontFamily: CONSOLE }}>
+      <div className="text-[25px] max-[332px]:text-[22px] w-full leading-normal" style={{ fontFamily: CONSOLE }}>
         {t.mobile.about.text.map((line, i) =>
           line === '' ? (
-            <p key={i} className="h-[25px]" />
+            <p key={i} className="h-[25px] max-[332px]:h-[22px]" />
           ) : (
             <p key={i} className="whitespace-pre-wrap">{line}</p>
           )

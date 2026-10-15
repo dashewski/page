@@ -4,6 +4,7 @@ export interface Content {
   hero: {
     name: string;
     tag1: string;
+    tag1line2?: string;
     tag1sub1: string;
     tag1sub2: string;
     tag2line1: string;
@@ -18,6 +19,8 @@ export interface Content {
   about: {
     title: string;
     text: string[];
+    cvButton: string;
+    cvUrl: string;
   };
   examples: {
     title: string;

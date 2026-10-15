@@ -17,17 +17,40 @@ export default function AboutInfo({ t }: AboutInfoProps) {
         {t.about.title}
       </p>
       <div className="flex items-start justify-between w-full">
-        <div
-          className="text-[40px] w-[730px] leading-normal"
-          style={{ fontFamily: CONSOLE }}
-        >
-          {t.about.text.map((line, i) =>
-            line === '' ? (
-              <p key={i} className="h-[40px]" />
-            ) : (
-              <p key={i} className="whitespace-pre-wrap">{line}</p>
-            )
-          )}
+        <div className="flex flex-col gap-[40px] items-start w-[730px]">
+          <div
+            className="text-[35px] w-full leading-normal"
+            style={{ fontFamily: CONSOLE }}
+          >
+            {t.about.text.map((line, i) =>
+              line === '' ? (
+                <p key={i} className="h-[35px]" />
+              ) : (
+                <p key={i} className="whitespace-pre-wrap">{line}</p>
+              )
+            )}
+          </div>
+          <a
+            href={t.about.cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-[324px] h-[30px] flex items-center justify-center bg-[#6cad5e] cursor-pointer relative
+              shadow-[inset_-2px_-2px_0px_#3d6b35,inset_2px_2px_0px_#8fd47f]
+              hover:bg-[#5a9e4c]
+              active:shadow-[inset_2px_2px_0px_#3d6b35,inset_-2px_-2px_0px_#8fd47f] active:translate-y-[1px]
+              transition-all"
+          >
+            <span
+              className="text-[#2c2c2c] text-[30px] leading-none whitespace-nowrap absolute"
+              style={{
+                fontFamily: VISITOR,
+                top: "50%",
+                transform: "translateY(-50%)",
+              }}
+            >
+              {t.about.cvButton}
+            </span>
+          </a>
         </div>
         <img
           src="/images/comp.svg"

@@ -37,7 +37,7 @@ export const starflipRu: CaseContent = {
   github: [
     {
       label: "{гитхаб бекенд линк}",
-      url: "https://github.com/digitalsoupteam/starflipbackend/",
+      url: "https://github.com/dashewski/starflipbackend/",
       
     },
         {

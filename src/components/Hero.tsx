@@ -49,12 +49,13 @@ export default function Hero({ t, lang, setLang }: HeroProps) {
         {/* Text block 1 */}
         <div className="flex flex-col gap-[15px] items-start pt-[180px]">
           <div className="bg-[#9a38af] inline-flex overflow-hidden">
-            <p
-              className="text-[#aeaeae] text-[40px] leading-none whitespace-nowrap -mt-[0.4em] -mb-[0.15em]"
+            <div
+              className="text-[#aeaeae] text-[40px] w-fit leading-none whitespace-nowrap -mt-[0.4em] -mb-[0.15em]"
               style={{ fontFamily: VISITOR }}
             >
-              {t.hero.tag1}
-            </p>
+              <p className="m-0">{t.hero.tag1}</p>
+              {t.hero.tag1line2 && <p className="m-0">{t.hero.tag1line2}</p>}
+            </div>
           </div>
           <div
             className="text-[#2c2c2c] text-[15px] leading-normal whitespace-nowrap"

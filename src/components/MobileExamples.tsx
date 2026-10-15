@@ -42,8 +42,8 @@ export default function MobileExamples({ t }: MobileExamplesProps) {
 
           {/* Right: name box + button */}
           <div className="flex flex-col gap-[8px] flex-1">
-            <div className="bg-[#aeaeae] flex items-center justify-center p-[8px] flex-1">
-              <p className="text-[#2c2c2c] text-[20px] leading-normal text-center" style={{ fontFamily: VISITOR }}>
+            <div className="bg-[#aeaeae] flex items-center p-[8px] flex-1">
+              <p className="text-[#2c2c2c] text-[20px] leading-normal text-left w-full" style={{ fontFamily: VISITOR }}>
                 {c.name}
               </p>
             </div>
@@ -60,7 +60,6 @@ export default function MobileExamples({ t }: MobileExamplesProps) {
                   {t.examples.viewButton}
                 </span>
               </button>
-              <span className="text-[#aeaeae] text-[20px]" style={{ fontFamily: VISITOR }}>{'<<<'}</span>
             </div>
           </div>
 

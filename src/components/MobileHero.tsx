@@ -31,9 +31,10 @@ export default function MobileHero({ t, lang, setLang }: MobileHeroProps) {
       <div className="flex flex-col gap-[8px] items-end mb-[40px]">
         <div className="flex flex-col gap-[6px] items-start">
           <div className="bg-[#9a38af] inline-flex overflow-hidden">
-            <p className="text-[#aeaeae] text-[25px] leading-none whitespace-nowrap -mt-[0.4em] -mb-[0.15em]" style={{ fontFamily: VISITOR }}>
-              {t.hero.tag1}
-            </p>
+            <div className="text-[#aeaeae] text-[25px] w-fit leading-none whitespace-nowrap -mt-[0.4em] -mb-[0.15em]" style={{ fontFamily: VISITOR }}>
+              <p className="m-0">{t.hero.tag1}</p>
+              {t.hero.tag1line2 && <p className="m-0">{t.hero.tag1line2}</p>}
+            </div>
           </div>
           <div className="text-[#2c2c2c] text-[15px] leading-normal" style={{ fontFamily: CHAKRA }}>
             <p>{t.hero.tag1sub1}</p>

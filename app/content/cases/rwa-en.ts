@@ -29,9 +29,9 @@ sections: [
   },
 ],
   github: [
-    { label: '{github backend link}', url: 'https://github.com/digitalsoupteam/rwa-platform-backend' },
-    { label: '{github frontend link}', url: 'https://github.com/digitalsoupteam/rwa-platform-frontend' },
-    { label: '{github smart-contracts link}', url: 'https://github.com/digitalsoupteam/rwa-platform' },
+    { label: '{github backend link}', url: 'https://github.com/dashewski/rwa-platform-backend' },
+    { label: '{github frontend link}', url: 'https://github.com/dashewski/rwa-platform-frontend' },
+    { label: '{github smart-contracts link}', url: 'https://github.com/dashewski/rwa-platform' },
     { label: '{figma design link}', url: 'https://www.figma.com/design/lNA8AJaw8yeKWM69RuMDKu/Slices---Public-share?node-id=2305-6&t=3ekxpMRQxItaIXBE-1'},
   ],
 }
