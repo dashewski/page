@@ -3,13 +3,13 @@ import { Content } from "@/types";
 export const ru: Content = {
   hero: {
     name: "Ник Дашевски",
-    tag1: "/ Бекенд, крипто, ИИ",
-    tag1sub1: "Product strategy & MVP planning,",
-    tag1sub2: "end-to-end product development",
-    tag2line1: "/ it-предприниматель",
+    tag1: "/ Бекенд, фин. сервисы & ai",
+    tag1sub1: "Архитектура продукта и технической",
+    tag1sub2: "реализации, end-to-end разработка",
+    tag2line1: "/ Product-директор",
     tag2line2: "$ разработчик",
-    tag2sub1: "Team leadership, investor relations ",
-    tag2sub2: "& contractor management, services sales",
+    tag2sub1: "Руковожу командами и подрядчиками, работаю",
+    tag2sub2: "с инвесторами, довожу идеи до продукта",
   },
   contact1: {
     text: "Я всегда за любой коннект, поэтому пишите",
@@ -18,7 +18,7 @@ export const ru: Content = {
   about: {
     title: "ИНФА",
     text: [
-      `/* 7+ лет запускаю стартапы, более  4 из них       сфокусирован на разработке,        крипто и искусственном интеллекте. 
+      `/* C 2017 управляю IT / digital проектами,      с 2020 занимаюсь разработкой:        backend, ai, web3 и финансовые сервисы. 
 
 Я тот самый разработчик    
                    с бизнес мозгами.         поэтому, вместе, мы можем сделать что-то крутое                        --------- и заработать много денег. */`,
@@ -45,10 +45,10 @@ export const ru: Content = {
   services: {
     title: "Что могу",
     items: [
-      "\u00A0\u00A0Запустить MVP быстро и чётко",
-      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Разработать проект — сам / с командой",
-      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Держать ваш IT и digital под контролем",
-      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Продать что-угодно инвесторам и клиентам",
+      "\u00A0\u00A0Быстро создать и запустить MVP",
+      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Разработать продукт — сам / с командой",
+      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Руководить вашим IT и digital штатом",
+      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Продать идею & продукт инвесторам",
     ],
   },
   contact2: {
@@ -59,10 +59,10 @@ export const ru: Content = {
   },
   footer: {
     email: "nikitadashewski@gmail.com",
-    team: "моя команда: https://digitalsoup.io/",
-    teamUrl: "https://digitalsoup.io/",
-    github: "gitHub",
-    githubUrl: "https://github.com/digitalsoupteam/",
+    team: "telegram link",
+    teamUrl: "https://t.me/dashewski",
+    github: "gitHub link",
+    githubUrl: "https://github.com/dashewski/",
   },
   mobile: {
     contact2lines: {
@@ -71,7 +71,7 @@ export const ru: Content = {
     },
     about: {
       text: [
-        `/* 7+ лет запускаю стартапы, более 4 из них       сфокусирован на разработке,        крипто и искусственном интеллекте.`,
+        `/* C 2017 управляю IT / digital проектами,      с 2020 занимаюсь разработкой:      backend, ai, web3 и финансовые сервисы.`,
         ``,
         `Я тот самый разработчик с`,
         `        бизнес мозгами. поэтому, вместе, мы можем сделать что-то крутое`,
@@ -80,10 +80,10 @@ export const ru: Content = {
     },
     services: {
       items: [
-        "Запустить MVP быстро и чётко",
-        "Разработать проект — сам / с командой",
-        "Держать ваш IT и digital под контролем",
-        "Продать что-угодно инвесторам и клиентам",
+        "Быстро создать и запустить MVP",
+        "Разработать продукт — сам / с командой",
+        "Руководить вашим IT и digital штатом",
+        "Продать идею & продукт инвесторам ",
       ],
     },
   },

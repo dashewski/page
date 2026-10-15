@@ -1,15 +1,16 @@
 import { Content } from "@/types";
+import { link } from "node:fs/promises";
 
 export const en: Content = {
   hero: {
     name: "NIK DASHEWSKI",
-    tag1: "/ backend, crypto, Ai",
-    tag1sub1: "Product strategy & MVP planning,",
-    tag1sub2: "end-to-end product development",
-    tag2line1: "/ IT-entrepreneur",
+    tag1: "/ Backend, fin. services & ai",
+    tag1sub1: "Product and technical architecture,",
+    tag1sub2: "end-to-end development",
+    tag2line1: "/ Product-director",
     tag2line2: "$ developer",
-    tag2sub1: "Team leadership, investor relations",
-    tag2sub2: "& contractor management, services sales",
+    tag2sub1: "I lead teams and contractors, work with ",
+    tag2sub2: "investors, take ideas through to product",
   },
   contact1: {
     text: "Feel free to reach out and collaborate",
@@ -18,7 +19,7 @@ export const en: Content = {
   about: {
     title: "about info",
     text: [
-      `/* I've been      launching startups for 7+ years, for 4+ years    focused on the dev,        crypto and AI.`,
+      `/* Leading      IT / digital projects since 2017, developing since 2020:  backend,   ai, web3, and financial services.`,
       ``,
       `I am that developer with`,
       `                 a business mindset.   That is why, together, we can build something cool`,
@@ -46,10 +47,10 @@ export const en: Content = {
   services: {
     title: "What i can",
     items: [
-      "\u00A0\u00A0\u00A0Launch MVPs fast and sharp",
-      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Build the product — solo / with a team",
-      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Keep your IT & digital under control",
-      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Sell everything to investors and clients",
+      "\u00A0\u00A0\u00A0Quickly build and launch an MVP",
+      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Develop the product — solo / with a team",
+      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Lead your IT and digital team",
+      "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Sell the idea & product to investors",
     ],
   },
   contact2: {
@@ -60,10 +61,10 @@ export const en: Content = {
   },
   footer: {
     email: "nikitadashewski@gmail.com",
-    team: "my team: https://digitalsoup.io/",
-    teamUrl: "https://digitalsoup.io/",
+    team: "telegram link",
+    teamUrl: "https://t.me/dashewski",
     github: "gitHub link",
-    githubUrl: "https://github.com/digitalsoupteam/",
+    githubUrl: "https://github.com/dashewski/",
   },
   mobile: {
     contact2lines: {
@@ -72,7 +73,7 @@ export const en: Content = {
     },
     about: {
       text: [
-        `/* I've been         launching startups for 7+ years,  for 4+ years           focused on the dev,        crypto and Ai.`,
+        `/* Leading         IT / digital projects since 2017,  developing since 2020:     backend, ai, web3, and financial services.`,
         ``,
         `I am that developer with a`,
         `            business mindset. That is why,        together, we can build something cool`,
@@ -81,10 +82,10 @@ export const en: Content = {
     },
     services: {
       items: [
-        "Launch MVPs fast and sharp",
-        "Build the product — solo / with a team",
-        "Keep your IT & digital under control",
-        "Sell everything to investors and clients",
+        "Quickly build and launch an MVP",
+        "Develop the product — solo / with a team",
+        "Lead your IT and digital team",
+        "Sell the idea & product to investors",
       ],
     },
   },
