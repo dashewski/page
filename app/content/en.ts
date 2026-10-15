@@ -34,7 +34,7 @@ export const en: Content = {
       {
         id: "01",
         color: "#6cad5e",
-        name: "*** Solo built a fair PvP crypto game: like a casino, but without the casino ***",
+        name: "*** Solo built a fair PvP game with crypto deposits ***",
         tags: "",
       },
       {
