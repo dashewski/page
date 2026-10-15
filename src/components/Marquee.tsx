@@ -5,12 +5,13 @@ const VISITOR = "'Visitor TT2 Pro', sans-serif"
 
 interface MarqueeSectionProps {
   t: Content
+  showContactText?: boolean
 }
 
-export default function MarqueeSection({ t }: MarqueeSectionProps) {
+export default function MarqueeSection({ t, showContactText = true }: MarqueeSectionProps) {
   return (
     <section className="flex items-stretch gap-[28px] w-full overflow-hidden">
-      <ContactBlock t={t} variant="stacked" />
+      <ContactBlock t={t} variant="stacked" showText={showContactText} />
 
       <div className="bg-[#9a38af] flex-1 overflow-hidden flex items-center">
         

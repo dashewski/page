@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Content } from '@/types'
 
 const VISITOR = "'Visitor TT2 Pro', sans-serif"
@@ -9,7 +10,7 @@ interface MobileAboutInfoProps {
 
 export default function MobileAboutInfo({ t }: MobileAboutInfoProps) {
   return (
-    <section className="flex flex-col gap-[20px] items-start text-[#aeaeae] w-full">
+    <section id="mobileAbout" className="flex flex-col gap-[20px] items-start text-[#aeaeae] w-full">
       <p className="text-[50px] leading-normal" style={{ fontFamily: VISITOR }}>
         {t.about.title}
       </p>
@@ -22,10 +23,8 @@ export default function MobileAboutInfo({ t }: MobileAboutInfoProps) {
           )
         )}
       </div>
-      <a
+      <Link
         href={t.about.cvUrl}
-        target="_blank"
-        rel="noopener noreferrer"
         className="w-full h-[30px] no-underline flex items-center justify-center bg-[#6cad5e] cursor-pointer
           shadow-[inset_-2px_-2px_0px_#3d6b35,inset_2px_2px_0px_#8fd47f]
           hover:bg-[#5a9e4c]
@@ -35,7 +34,7 @@ export default function MobileAboutInfo({ t }: MobileAboutInfoProps) {
         <span className="text-[#2c2c2c] text-[20px] leading-none whitespace-nowrap" style={{ fontFamily: VISITOR }}>
           {t.about.cvButton}
         </span>
-      </a>
+      </Link>
     </section>
   )
 }

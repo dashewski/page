@@ -84,3 +84,14 @@ export interface CaseContent {
     url: string
   }[]
 }
+export interface CvContent {
+  back: string
+  title: string
+  subtitle: string
+  headline: string
+  paragraphs: string[]
+  skillsTitle: string
+  skills: string[]
+  skillsLayout: 'list' | 'tags'
+  closing: string
+}

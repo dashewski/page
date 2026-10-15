@@ -5,9 +5,10 @@ const VISITOR = "'Visitor TT2 Pro', sans-serif";
 interface ContactBlockProps {
   t: Content;
   variant: "inline" | "stacked";
+  showText?: boolean;
 }
 
-export default function ContactBlock({ t, variant }: ContactBlockProps) {
+export default function ContactBlock({ t, variant, showText = true }: ContactBlockProps) {
   if (variant === "inline") {
     return (
       <section className="flex items-center justify-between w-full">
@@ -43,14 +44,16 @@ export default function ContactBlock({ t, variant }: ContactBlockProps) {
   }
 
   return (
-    <div className="flex flex-col gap-[20px] items-start shrink-0">
-      <div
-        className="text-[#aeaeae] text-[40px] leading-normal"
-        style={{ fontFamily: VISITOR }}
-      >
-        <p>{t.contact2.line1}</p>
-        <p>{t.contact2.line2}</p>
-      </div>
+    <div className={`flex flex-col gap-[20px] items-start shrink-0 ${showText ? "" : "justify-center"}`}>
+      {showText && (
+        <div
+          className="text-[#aeaeae] text-[40px] leading-normal"
+          style={{ fontFamily: VISITOR }}
+        >
+          <p>{t.contact2.line1}</p>
+          <p>{t.contact2.line2}</p>
+        </div>
+      )}
 
       <a
         href="https://t.me/dashewski/"

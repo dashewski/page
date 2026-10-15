@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Content } from '@/types'
 
 const VISITOR = "'Visitor TT2 Pro', sans-serif"
@@ -9,7 +10,7 @@ interface AboutInfoProps {
 
 export default function AboutInfo({ t }: AboutInfoProps) {
   return (
-    <section className="flex flex-col gap-[40px] items-start text-[#aeaeae]">
+    <section id="about" className="flex flex-col gap-[40px] items-start text-[#aeaeae]">
       <p
         className="text-[100px] leading-normal whitespace-nowrap"
         style={{ fontFamily: VISITOR }}
@@ -30,10 +31,8 @@ export default function AboutInfo({ t }: AboutInfoProps) {
               )
             )}
           </div>
-          <a
+          <Link
             href={t.about.cvUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="w-[324px] h-[30px] no-underline flex items-center justify-center bg-[#6cad5e] cursor-pointer relative
               shadow-[inset_-2px_-2px_0px_#3d6b35,inset_2px_2px_0px_#8fd47f]
               hover:bg-[#5a9e4c]
@@ -50,7 +49,7 @@ export default function AboutInfo({ t }: AboutInfoProps) {
             >
               {t.about.cvButton}
             </span>
-          </a>
+          </Link>
         </div>
         <img
           src="/images/comp.svg"

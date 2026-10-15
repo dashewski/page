@@ -4,19 +4,22 @@ const VISITOR = "'Visitor TT2 Pro', sans-serif";
 
 interface MobileMarqueeProps {
   t: Content;
+  showContactText?: boolean;
 }
 
-export default function MobileMarquee({ t }: MobileMarqueeProps) {
+export default function MobileMarquee({ t, showContactText = true }: MobileMarqueeProps) {
   return (
     <section className="flex flex-col gap-[35px] w-full">
       {/* Contact stacked */}
       <div className="flex flex-col gap-[20px] items-start">
-        <div
-          className="text-[#aeaeae] text-[40px] leading-normal"
-          style={{ fontFamily: VISITOR }}
-        >
-          <p>{t.contact1.text}</p>
-        </div>
+        {showContactText && (
+          <div
+            className="text-[#aeaeae] text-[40px] leading-normal"
+            style={{ fontFamily: VISITOR }}
+          >
+            <p>{t.contact1.text}</p>
+          </div>
+        )}
         <a
           href="https://t.me/dashewski/"
           target="_blank"
