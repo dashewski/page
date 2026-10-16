@@ -36,7 +36,7 @@ const caseImages: Record<string, string[]> = {
     "/images/cases/rwa/rwa1.png",
     "/images/cases/rwa/rwa-liquidity.webp",
     "/images/cases/rwa/rwa3.png",
-    "/images/cases/rwa/rwa-portfolio.webp",
+    "/images/cases/rwa/rwa-inside.webp",
   ],
 };
 
