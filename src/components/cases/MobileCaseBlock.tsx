@@ -29,11 +29,11 @@ export default function MobileCaseBlock({ section, index, imageSrc, color }: Mob
       </p>
 
       {/* media */}
-      <div className="w-full" style={{ aspectRatio: '343/214' }}>
+      <div className="relative w-full overflow-hidden" style={{ aspectRatio: '343/214' }}>
         {section.video ? (
-          <video src={section.video} autoPlay loop muted playsInline className="w-full h-full object-cover" />
+          <video src={section.video} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" />
         ) : imageSrc ? (
-          <img src={imageSrc} alt="" className="w-full h-full object-cover" />
+          <img src={imageSrc} alt="" className="absolute inset-0 w-full h-full object-cover" />
         ) : (
           <div className="w-full h-full bg-[#1e1e1e] flex items-center justify-center">
             <span className="text-[#2c2c2c] text-[15px]" style={{ fontFamily: VISITOR }}>
