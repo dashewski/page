@@ -28,11 +28,13 @@ export default function Page() {
   useEffect(() => {
     if (!mounted) return
     const hash = window.location.hash
-    if (hash) {
-      setTimeout(() => {
-        document.getElementById(hash.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' })
-      }, 300)
-    }
+    if (!hash) return
+    const timer = setTimeout(() => {
+      document.getElementById(hash.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' })
+      // One-shot: drop the anchor from the URL, otherwise every reload jumps back to it
+      window.history.replaceState(null, '', window.location.pathname + window.location.search)
+    }, 300)
+    return () => clearTimeout(timer)
   }, [mounted])
 
   if (!mounted) return null;

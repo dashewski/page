@@ -1,4 +1,6 @@
 import { Content, Lang } from "@/types";
+import Link from "next/link";
+import { goHome } from "@/lib/goHome";
 
 const VISITOR = "'Visitor TT2 Pro', sans-serif";
 const CHAKRA = "'Chakra Petch', sans-serif";
@@ -14,12 +16,14 @@ export default function Hero({ t, lang, setLang }: HeroProps) {
     <section className="flex flex-col items-start pt-[80px] overflow-clip w-full relative">
       {/* Top row: name + lang switcher */}
       <div className="flex items-start justify-between w-full whitespace-nowrap">
-        <p
-          className="text-[#aeaeae] text-[130px] leading-none"
+        <Link
+          href="/"
+          onClick={goHome}
+          className="text-[#aeaeae] text-[130px] leading-none no-underline"
           style={{ fontFamily: VISITOR }}
         >
           {t.hero.name}
-        </p>
+        </Link>
         <div
           className="flex gap-[10px] items-center text-[30px] pt-[8px]"
           style={{ fontFamily: VISITOR }}

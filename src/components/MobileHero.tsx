@@ -1,4 +1,6 @@
 import { Content, Lang } from '@/types'
+import Link from 'next/link'
+import { goHome } from '@/lib/goHome'
 
 const VISITOR = "'Visitor TT2 Pro', sans-serif"
 const CHAKRA = "'Chakra Petch', sans-serif"
@@ -20,9 +22,9 @@ export default function MobileHero({ t, lang, setLang }: MobileHeroProps) {
             <span onClick={() => setLang('en')} className={`cursor-pointer transition-colors ${lang === 'en' ? 'text-[#aeaeae]' : 'text-[#2c2c2c]'}`}>eng</span>
           </div>
         </div>
-        <p className="text-[#aeaeae] text-[50px] leading-none" style={{ fontFamily: VISITOR }}>
+        <Link href="/" onClick={goHome} className="text-[#aeaeae] text-[50px] leading-none no-underline" style={{ fontFamily: VISITOR }}>
           {t.hero.name}
-        </p>
+        </Link>
       </div>
 
       <div className="h-[220px]" />
