@@ -16,6 +16,23 @@ const VISITOR = "'Visitor TT2 Pro', sans-serif";
 const CHAKRA = "'Chakra Petch', sans-serif";
 const GREEN = "#6cad5e";
 
+// "**bold**" in the content strings -> <strong>
+function Rich({ text }: { text: string }) {
+  return (
+    <>
+      {text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
+        i % 2 ? (
+          <strong key={i} className="font-bold text-[#e6e6e6]">
+            {part}
+          </strong>
+        ) : (
+          part
+        )
+      )}
+    </>
+  );
+}
+
 function LangSwitch({
   lang,
   setLang,
@@ -158,7 +175,7 @@ export default function CvPage() {
                   className="text-[#aeaeae] text-[22px] leading-relaxed"
                   style={{ fontFamily: CHAKRA }}
                 >
-                  {p}
+                  <Rich text={p} />
                 </p>
               ))}
             </div>
@@ -233,7 +250,7 @@ export default function CvPage() {
                 className="text-[#aeaeae] text-[15px] leading-relaxed"
                 style={{ fontFamily: CHAKRA }}
               >
-                {p}
+                <Rich text={p} />
               </p>
             ))}
           </div>
